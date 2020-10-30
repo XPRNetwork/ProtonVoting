@@ -42,7 +42,7 @@ export default {
         'mailto:you@gmail.com?' +
         'subject=' + encodeURIComponent('Voting Keys for Election') +
         '&body=' + encodeURIComponent(
-          `Public Key: ${this.publicKey}` + '%0D%0A' +
+          `Public Key: ${this.publicKey}\r\n` +
           `Private Key: ${this.privateKey}`          
         )
       );
