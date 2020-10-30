@@ -109,7 +109,7 @@ export default {
       const { signatures, signer, transaction } = result
 
       try {
-        const res = await axios.post('http://localhost:3000/vote', { signatures, signer, transaction })
+        const res = await axios.post('https://www.api.bloks.io/proton-voting/vote', { signatures, signer, transaction })
         if (res.data.success) {
           await this.fetchPoll()
           this.step = 4
