@@ -66,6 +66,5 @@ router.post('/vote', async (request, response, next) => {
 // add router in the Express app.
 app.use("/", router);
 
-const PORT = 3000
-app.listen(PORT)
-console.log(`Running Vote Server on Port ${PORT}`)
+app.listen(process.env.PORT)
+console.log(`Running Vote Server on Port ${process.env.PORT}`)
