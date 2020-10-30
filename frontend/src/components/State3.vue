@@ -30,6 +30,7 @@
 </template>
 
 <script>
+// Test
 export default {
   name: 'State3',
   props: ['choices'],
