@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@protonprotocol/protonjs": "^21.0.27",
+    "@protonprotocol/protonjs": "^21.0.28",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "elliptic": "^6.5.3",
