@@ -34,7 +34,7 @@
       YOU'VE VOTED
     </div>
     <div class="bottom-subtitle">
-      Your vote have been registered under your public key. 
+      Your vote has been registered under your public key. 
     </div>
     <div class="bottom-button" @click="seeVote">
       SEE VOTE
