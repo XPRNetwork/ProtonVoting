@@ -14,6 +14,7 @@ export const createLink = async ({ showSelector } = { showSelector: true }) => {
         transportOptions: {
             requestAccount: 'protonvoting', /* Optional: Your proton account */
             requestStatus: false, /* Optional: Display request success and error messages, Default true */
+            backButton: true
         },
         selectorOptions: {
             appName: 'Proton Vote', /* Optional: Name to show in modal, Default 'app' */
