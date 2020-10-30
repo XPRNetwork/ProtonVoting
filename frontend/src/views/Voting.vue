@@ -70,7 +70,7 @@ export default {
         }
       }
 
-      return '@/assets/proton_avatar.png'
+      return '/proton_avatar.png'
     }
   },
 
