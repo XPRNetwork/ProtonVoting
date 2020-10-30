@@ -1,10 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from './views/Home'
-import Voting from './views/Voting'
+import Vote from './views/Vote'
+import Results from './views/Results'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
-  { path: '/voting', name: 'Voting', component: Voting }
+  { path: '/vote/:id', name: 'Vote', component: Vote, props: true },
+  { path: '/results/:id', name: 'Results', component: Results, props: true }
 ]
 
 export const router = createRouter({

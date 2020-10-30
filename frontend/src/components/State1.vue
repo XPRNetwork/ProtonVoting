@@ -1,5 +1,4 @@
 <template>
-  <img src="@/assets/state1.png" style="width: 400px; height: 70px;"/>
   <div class="state-1-title">
     SUBMIT A VALID PHOTO ID
   </div>

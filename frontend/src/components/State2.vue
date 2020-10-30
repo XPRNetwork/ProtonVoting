@@ -1,5 +1,4 @@
 <template>
-  <img src="@/assets/state2.png" style="width: 400px; height: 70px;"/>
   <div class="state-2-title">
     SAVE YOUR VOTING KEYS
   </div>
@@ -84,6 +83,7 @@ export default {
 }
 
 .state-2-key-container {
+  max-width: calc(100vw - 64px);
   width: calc(100% - 64px);
   padding: 32px;
   margin-top: 48px;
@@ -108,6 +108,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  word-break: break-all;
   width: 100%;
   height: 40px;
   object-fit: contain;

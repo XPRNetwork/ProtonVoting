@@ -1,4 +1,5 @@
 import { ConnectWallet } from '@protonprotocol/proton-web-sdk';
+import { rpc } from '@/api/proton'
 
 const appIdentifier = 'protonvote'
 
@@ -8,7 +9,7 @@ export let session
 export const createLink = async ({ showSelector } = { showSelector: true }) => {
     link = await ConnectWallet({
         linkOptions: {
-            endpoints: ['https://proton.greymass.com']
+            rpc
         },
         transportOptions: {
             requestAccount: 'protonvoting', /* Optional: Your proton account */

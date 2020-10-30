@@ -1,5 +1,4 @@
 <template>
-  <img src="@/assets/state3.png" style="width: 400px; height: 70px;"/>
   <div class="state-3-title">
     PICK YOUR CANDIDATE
   </div>
@@ -155,10 +154,5 @@ export default {
   letter-spacing: 0.88px;
   text-align: center;
   color: #ffffff;
-}
-
-.disabled {
-  opacity: 0.4;
-  cursor: none;
 }
 </style>

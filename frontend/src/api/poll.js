@@ -1,10 +1,8 @@
-import { link } from './user'
+import { rpc } from '@/api/proton'
 import { sha256 } from '@protonprotocol/protonjs'
 
 export const fetchPoll = async (pollId) => {
-    if (!link) return undefined
-
-    const res = await link.rpc.get_table_rows({
+    const res = await rpc.get_table_rows({
         code: 'protonvoting',
         scope: 'protonvoting',
         table: 'polls',
@@ -21,11 +19,9 @@ export const fetchPoll = async (pollId) => {
 }
 
 export const fetchVoteByKey = async (publicKey, pollId) => {
-    if (!link) return undefined
-
     const hashedKey = sha256(publicKey.key.data)
 
-    const res = await link.rpc.get_table_rows({
+    const res = await rpc.get_table_rows({
         code: 'protonvoting',
         scope: pollId,
         table: 'votes',
