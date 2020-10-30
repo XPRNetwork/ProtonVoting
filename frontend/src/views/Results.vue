@@ -147,18 +147,20 @@ export default {
 }
 
 .top-container {
+  max-width: calc(100vw - 64px);
   width: 500px;
   border-radius: 2px;
   background-color: #f7f9fd;
 }
 
 .bottom-container {
+  max-width: calc(100vw - 64px);
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 24px;
-  width: 100%;
   border-radius: 2px;
   background-color: #f7f9fd;
 }
