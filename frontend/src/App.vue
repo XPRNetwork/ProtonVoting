@@ -56,8 +56,8 @@ export default {
 
 <style>
 .disabled {
-  opacity: 0.4;
-  cursor: none;
+  opacity: 0.4 !important;
+  cursor: none !important;
 }
 </style>
 
