@@ -3,7 +3,7 @@
   base = "frontend"
 
   # Directory (relative to root of your repo) that contains the deploy-ready build
-  publish = "frontend/dist"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
