@@ -62,9 +62,15 @@ export default {
     }),
 
     userImage () {
-      return this.avatar
-        ? `data:image/jpeg;base64,${this.avatar}`
-        : '@/assets/proton_avatar.png'
+      if (this.avatar) {
+        if (this.avatar.indexOf('/9j/') !== -1) {
+          return `data:image/jpeg;base64,${this.avatar}`
+        } else if (this.avatar.indexOf('iVBORw0KGgo') !== -1) {
+          return `data:image/png;base64,${this.avatar}`
+        }
+      }
+
+      return '@/assets/proton_avatar.png'
     }
   },
 
