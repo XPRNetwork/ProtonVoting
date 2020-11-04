@@ -2,7 +2,8 @@ import userApi from '../../api/user'
 
 const getDefaultState = () => ({
   actor: undefined,
-  permission: undefined
+  permission: undefined,
+  avatar: undefined
 })
 
 const state = () => getDefaultState()
