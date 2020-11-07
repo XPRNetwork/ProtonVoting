@@ -8,7 +8,7 @@
 
       <img :src="userImage" class="user-img" @click="logout" v-if="actor"/>
       <div class="connect-wallet-button" @click="login" style="margin-left: auto;" v-else>
-        CONNECT WALLET
+        LOGIN
       </div>
     </div>
 
