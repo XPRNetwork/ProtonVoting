@@ -51,8 +51,13 @@ export default {
   methods: {
     async login () {
       await this.$store.dispatch('user/login')
+      
       if (this.actor) {
-        this.$router.push(`/vote/${DEFAULT_POLL_ID}`)
+        setInterval(() => {
+          if (this.$route.hash) {
+            this.$router.push(`/vote/${DEFAULT_POLL_ID}`)
+          }
+        }, 1000)
       }
     },
 

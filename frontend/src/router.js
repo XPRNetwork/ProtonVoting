@@ -13,7 +13,3 @@ export const router = createRouter({
   history: createWebHistory(),
   routes,
 })
-
-router.beforeEach((to, from) => {
-  console.log(to, from)
-})
