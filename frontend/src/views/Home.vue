@@ -57,7 +57,7 @@ export default {
           if (this.$route.hash) {
             this.$router.push(`/vote/${DEFAULT_POLL_ID}`)
           }
-        }, 1000)
+        }, 250)
       }
     },
 
