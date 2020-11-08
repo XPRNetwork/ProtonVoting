@@ -133,7 +133,7 @@ export default {
   color: #3947a3;
   width: 100%;
   height: 32px;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
 
@@ -160,7 +160,7 @@ export default {
   background-color: #3947a3;
   color: white;
   opacity: 1;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 

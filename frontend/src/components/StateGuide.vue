@@ -23,10 +23,10 @@ export default {
   name: 'StateGuide',
   props: ['state'],
   methods: {
-      goToStep (step) {
-          if (step > this.state) return
-          this.$emit('go-to-step', step)
-      }
+    goToStep (step) {
+      if (step > this.state) return
+      this.$emit('go-to-step', step)
+    }
   }
 }
 </script>
