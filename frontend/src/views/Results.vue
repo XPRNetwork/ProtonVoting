@@ -292,7 +292,7 @@ export default {
 .public-key-title {
   margin-top: 24px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   font-family: HelveticaNeue;
   font-size: 14px;
   font-weight: bold;
@@ -305,7 +305,7 @@ export default {
 
 .public-key-container {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   margin-top: 5px;
 
   height: 40px;
