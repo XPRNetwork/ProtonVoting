@@ -53,7 +53,10 @@ export default {
   },
 
   created () {
-    window.addEventListener("hashchange", (e) => e.preventDefault())
+    window.addEventListener("hashchange", (e) => {
+      console.log('hashchange', e)
+      e.preventDefault()
+    })
   }
 }
 </script>
