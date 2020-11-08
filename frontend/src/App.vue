@@ -50,6 +50,10 @@ export default {
       login: 'user/login',
       logout: 'user/logout'
     })
+  },
+
+  created () {
+    window.addEventListener("hashchange", (e) => e.preventDefault())
   }
 }
 </script>
