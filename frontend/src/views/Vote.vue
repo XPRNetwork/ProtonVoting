@@ -7,7 +7,7 @@
 
 <script>
 import { mapActions, mapState } from 'vuex'
-import { Key, Numeric } from '@protonprotocol/protonjs'
+import { Key, Numeric } from '@proton/js'
 import axios from 'axios'
 import { fetchPoll } from '../api/poll'
 
@@ -104,7 +104,8 @@ export default {
             }
           })
         } else {
-          alert(res.data.error)
+          const assertError = res.data.error && res.data.error.json && res.data.error.json.error.details[0].message.replace('assertion failure with message: ', '')
+          alert(assertError || res.data.error)
         }
       } catch (e) {
         console.log(e)

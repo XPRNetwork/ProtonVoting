@@ -1,4 +1,4 @@
-const { Api, JsonRpc, JsSignatureProvider, Key } = require('@protonprotocol/protonjs')
+const { Api, JsonRpc, JsSignatureProvider, Key } = require('@proton/js')
 const fetch = require('node-fetch')
 const { CHAIN_ID, CONTRACT, VOTE_ACTION, RELAYER_ACTOR, RELAYER_PERMISSION, ENDPOINT } = require('./constants')
 const { ec } = require('elliptic')

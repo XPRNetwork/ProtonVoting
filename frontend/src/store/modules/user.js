@@ -1,4 +1,4 @@
-import userApi from '../../api/user'
+import { session, login, logout, transact } from '../../api/user'
 
 const getDefaultState = () => ({
   actor: undefined,
@@ -12,12 +12,12 @@ const getters = {}
 
 const actions = {
   async login ({ commit }) {
-    const session = await userApi.login()
+    await login()
     commit('setUser', session)
   },
 
   async logout ({ commit }) {
-    await userApi.logout()
+    await logout()
     commit('resetUser')
   },
 
@@ -26,7 +26,7 @@ const actions = {
       action.authorization = [{ actor: state.actor, permission: state.permission }]
       return action
     })
-    return await userApi.transact(actions, broadcast)
+    return await transact(actions, broadcast)
   }
 }
 

@@ -1,5 +1,5 @@
 import { rpc } from '@/api/proton'
-import { sha256 } from '@protonprotocol/protonjs'
+import { sha256 } from '@proton/js'
 
 export const fetchPoll = async (pollId) => {
     const res = await rpc.get_table_rows({

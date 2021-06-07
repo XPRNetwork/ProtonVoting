@@ -38,6 +38,19 @@ namespace proton
     _polls.erase(poll);
   }
 
+  void atom::modifyend (
+    const eosio::name& creator,
+    const uint64_t& poll_id,
+    const uint64_t& ends_at
+  ) {
+    require_auth(creator);
+    auto poll = _polls.require_find(poll_id, "Poll not found.");
+    eosio::check(poll->creator == creator, "Not the creator");
+    _polls.modify(poll, creator, [&](auto& p) {
+      p.ends_at = ends_at;
+    });
+  }
+
   void atom::vote (
     const eosio::name relay,
     const uint64_t& poll_id,

@@ -23,7 +23,7 @@
     </div>
 
     <div class="button-container">
-      <div class="connect-wallet-button" @click="login">
+      <div class="connect-wallet-button" @click="vote">
         VOTE NOW
       </div>
       <div class="see-results-button" @click="seeResults">
@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 
 const DEFAULT_POLL_ID = 0
 
@@ -49,15 +49,14 @@ export default {
   },
 
   methods: {
-    async login () {
-      await this.$store.dispatch('user/login')
-      
+    ...mapActions({
+      login: 'user/login'
+    }),
+
+    async vote () {
+      await this.login()
       if (this.actor) {
-        setInterval(() => {
-          if (this.$route.hash) {
-            this.$router.push(`/vote/${DEFAULT_POLL_ID}`)
-          }
-        }, 250)
+        this.$router.push(`/vote/${DEFAULT_POLL_ID}`)
       }
     },
 

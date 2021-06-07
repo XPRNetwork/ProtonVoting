@@ -120,6 +120,24 @@
             ]
         },
         {
+            "name": "modifyend",
+            "base": "",
+            "fields": [
+                {
+                    "name": "creator",
+                    "type": "name"
+                },
+                {
+                    "name": "poll_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "ends_at",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
             "name": "resetpool",
             "base": "",
             "fields": [
@@ -165,6 +183,11 @@
         {
             "name": "deletepoll",
             "type": "deletepoll",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "modifyend",
+            "type": "modifyend",
             "ricardian_contract": ""
         },
         {

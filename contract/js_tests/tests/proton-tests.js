@@ -1,4 +1,4 @@
-const { Key, Numeric } = require('@protonprotocol/protonjs')
+const { Key, Numeric } = require('@proton/js')
 
 const assert = require('assert');
 

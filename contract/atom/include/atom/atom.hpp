@@ -55,6 +55,12 @@ namespace proton {
       }
     };
 
+    ACTION modifyend (
+      const eosio::name& creator,
+      const uint64_t& poll_id,
+      const uint64_t& ends_at
+    );
+
     // Define table
     TABLE Vote {
       uint64_t index;

@@ -9,7 +9,7 @@
   "author": "jafri",
   "license": "ISC",
   "dependencies": {
-    "@protonprotocol/protonjs": "^21.0.24",
+    "@proton/js": "^21.0.24",
     "bignumber.js": "^9.0.1",
     "eoslime": "^2.0.0",
     "mocha": "^8.1.3"

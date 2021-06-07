@@ -83,7 +83,7 @@
 <script>
 import { fetchVoteByKey } from '../api/poll'
 import { fetchPoll } from '../api/poll'
-import { Key } from '@protonprotocol/protonjs'
+import { Key } from '@proton/js'
 
 export default {
   name: 'Results',
